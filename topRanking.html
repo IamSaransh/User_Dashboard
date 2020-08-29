@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>User Dashboard</title>
+
+  <!-- Custom fonts -->
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/dt/dt-1.10.21/datatables.min.css"/>
+  <!-- Custom styles -->
+  <link href="css/stylesheet.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+  
+
+</head>
+
+<body>
+
+   
+
+        <div id="mySidebar" class="sidebar">
+            <label href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</label>
+            <img class="logo2" src="images/caramelacademy.png" width="200px" height="70px">
+            <a href="#"  class="userimg img logo rounded-circle mb-2" style="background-image: url(images/student.jpg);"></a>
+            <label class="name align-content-center" href="#">Hello User!</label>
+            <a href="dashboard.html" ><i class="fa fa-pie-chart" aria-hidden="true" style="color: aliceblue"></i>User Dashboard</a>                        
+            <a href="myCources.html"><i class="fa fa-book" aria-hidden="true" style="color: aliceblue"></i>My Cources</a>
+            <a href="progres.html"><i class="fa fa-tasks" aria-hidden="true" style="color: aliceblue"></i>Progress report</a>
+            <a href="topRanking.html" class="active"><i class="fa fa-bell" aria-hidden="true" style="color: aliceblue"></i>Top Ranking</a>
+           
+            </div>
+
+          <div class="acaheader" id="topheader">
+            <div class="container-fluid text5">
+                <nav class="navbar navbar-expand-lg bg navbar-light">
+                    <button class="navbar-toggler" onclick="openNav()" type="button">
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+                    <label class="dash">Dashboard <i class="fa fa-home" aria-hidden="true" style="color: black"></i></label>
+                    <!-- Toggler/collapsibe Button -->
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+                    <!-- Navbar links -->
+                    <div class="navbar-collapse collapse" id="collapsibleNavbar">
+                        <ul class="navbar-nav mr-auto">
+                           
+                        </ul>
+                        <ul class="navbar-nav ml-auto font-weight-bold">
+                            <li class="nav-item">
+                                <form autocomplete="off" action="#">
+                                    <span class="search-input">
+                                    <div class="autocomplete searchbar">
+                                        <input id = "automplete-3" placeholder="Search">
+                                        <a><i class="fa fa-search" type="submit" for="autocomplete-3" style="font-size:25px;background-color:white;" aria-hidden="true"></i></a>
+                                    </div>
+                                </form>
+                            </li>
+                            
+                        </ul>
+                        
+                    </div>
+                    <label class="dash">Sign out <i class="fa fa-sign-out" aria-hidden="true" style="color: black"></i></label>
+                </nav>
+            </div>
+        </div>
+    
+  
+        
+        <div class="container pull-right float-right">
+            <table id="example" class="display" width="100%" class="table table-hover pull-right"></table>
+        </div>
+        
+    
+
+       
+
+
+
+        
+
+
+
+
+  <!-- Bootstrap core JavaScript-->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/jquery/jquery3.5.1.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Core plugin JavaScript-->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+
+  <!-- Page level plugins -->
+  <script src="vendor/chart.js/Chart.min.js"></script>
+
+  <!--datatables js-->
+  <script type="text/javascript" src="https://cdn.datatables.net/v/dt/dt-1.10.21/datatables.min.js"></script>
+  <!--Kindly refer to https://datatables.net/examples/data_sources/server_side.html for converting above to server side tech-->
+<script type="text/javascript" src="js/demo/datatables-demo.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.4.4/umd/popper.min.js"></script>
+<script>
+    function openNav() {
+        document.getElementById("mySidebar").style.width = "250px";
+        document.getElementById("main").style.marginLeft = "250px";
+    }
+    function closeNav() {
+        document.getElementById("mySidebar").style.width = "0";
+        document.getElementById("main").style.marginLeft= "0";
+      }
+    $(function() {
+       var availableTutorials = [
+       'Core UI','Advanced UI','React.js','Vue.js','AngularJS','Asp.net','GoLang','Coure UI Stack','Node.js','Java','Python','Core Java','Advance Java','.Net','.Net Core','MEAN Stack','MESN Stack','MEVN Stack','Ruby'	
+       ];
+       $( "#automplete-3" ).autocomplete({
+          minLength:1,   
+          delay:500,   
+          source: availableTutorials
+       });
+    });
+
+    
+ </script>
+</body>
+
+</html>

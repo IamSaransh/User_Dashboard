@@ -1,0 +1,203 @@
+* { 
+padding: 0;
+margin: 0;
+outline: none;
+font-family: Roboto, Arial, sans-serif;
+font-size: 14px;
+line-height: 22px;
+}
+h1 {
+position: absolute;
+margin: 0;
+font-size: 32px;
+color: #fff;
+}
+h2 {
+font-weight: 400;
+color:#666;
+}
+h3 {
+
+    padding:1rem;
+    font-weight: 600;
+    color:#01008C;
+}
+p {
+    color:#666; 
+}
+
+.topdiv {
+    height: fit-content;
+    position: fixed;
+    color:white;
+    background-color: dodgerblue;
+    margin-bottom: 100px;
+    text-align: center;
+    box-shadow: 0 0 20px 0 #095484; 
+    z-index: 2;
+}
+.topdiv:hover {
+    text-decoration: underline;
+    cursor: pointer;
+
+}
+.topdiv h4 {
+    padding: 1rem;
+    font-size:smaller;
+}
+.testbox {
+justify-content: center;
+align-items: center;
+height: inherit;
+padding: 20px;
+margin-top: 0;
+z-index:10;
+}
+form {
+width: 100%;
+padding: 20px;
+border-radius: 6px;
+background: #fff;
+box-shadow: 0 0 20px 0 #666; 
+}
+.responsive {
+    width: 100%;
+    height: 200px;
+}
+.top-banner {
+    height: 200px;
+}
+.top {
+    margin-top: 3rem;
+    height: 500px;
+}
+button{
+    margin: 1rem;
+    border: 0px;
+    border-radius: 20px;
+    width: 80%;
+    height: 40px;
+    font-size: larger;
+    font-weight: 600;
+}
+.banner {
+position: relative;
+height: 210px;
+background-position-y: 50%;
+background-size: cover;
+display: flex;
+justify-content: center;
+align-items: center;
+text-align: center;
+}
+
+input, select {
+margin-bottom: 10px;
+border: 1px solid #ccc;
+border-radius: 3px;
+}
+input {
+padding: 5px;
+}
+select {
+width: 100%;
+padding: 7px 0;
+background: transparent;
+}
+.item:hover p, .item:hover i, .question:hover p, .question label:hover, input:hover::placeholder, a {
+color: #095484;
+}
+.item input:hover, .item select:hover {
+border: 1px solid transparent;
+box-shadow: 0 0 6px 0 #095484;
+color: #095484;
+}
+.item {
+position: relative;
+margin: 10px 0;
+}
+
+.testbox input[type="text"] {
+    width:100%;
+}
+.testbox input[type="email"] {
+    width:100%;
+}
+.item i, input[type="date"]::-webkit-calendar-picker-indicator {
+position: absolute;
+font-size: 20px;
+color: #a9a9a9;
+}
+.item i {
+right: 2%;
+top: 30px;
+
+}
+[type="date"]::-webkit-calendar-picker-indicator {
+right: 1%;
+z-index: 2;
+opacity: 0;
+cursor: pointer;
+}
+
+label.check {
+position: relative;
+display: inline-block;
+margin: 5px 10px 10px 0;
+cursor: pointer;
+}
+.question span {
+margin-left: 10px;
+}
+span.required {
+margin-left: 0;
+color: red;
+}
+
+input[type=checkbox]:checked + .check:before {
+background: #095484;
+}
+
+input[type=checkbox]:checked + label:after {
+opacity: 1;
+}
+.btn-block {
+margin-top: 10px;
+text-align: center;
+}
+button {
+width: 150px;
+padding: 10px;
+border: none;
+border-radius: 5px; 
+background: #095484;
+font-size: 16px;
+color: #fff;
+cursor: pointer;
+}
+button:hover {
+background: #0666a3;
+}
+
+@media (min-width: 568px) {
+.name-item, .city-item {
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+}
+
+.name-item input, .city-item input {
+width: calc(50% - 20px);
+}
+.city-item select {
+width: calc(50% - 8px);
+}
+.topdiv h4 {
+    font-size: large;
+}
+}
+@media (min-width: 1000px) {
+    h3{
+        margin-top:120px;
+    }
+}

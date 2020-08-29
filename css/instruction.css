@@ -1,0 +1,62 @@
+.box1 {
+    margin:2rem 0 0 2rem;
+}
+h2 {
+    font-weight: 700;
+    color:#1C7AAE;
+    margin:1rem;
+}
+p {
+    margin: 1rem;
+}
+.responsive {
+    width: 100%;
+    height: auto;
+}
+.box {
+    margin:1rem;
+    text-align: center;
+
+}
+.in-box {
+    background-color: #1C7AAE;
+    border-radius: 20px;
+}
+.in-box p {
+    color: white;
+}
+h4 {
+    font-weight: 700;
+    color: #1C7AAE;
+}
+p {
+    text-transform: initial;
+    font-size: 20px;
+}
+.star {
+    height: 120px;
+}
+.startbox {
+    text-align: center;
+    padding: 2rem;
+}
+
+button{
+    margin: 1rem;
+    border: 0px;
+    border-radius: 20px;
+    width: 80%;
+    height: 40px;
+    font-size: larger;
+    font-weight: 600;
+}
+.startbox {
+margin-top: 50px;
+}
+
+@media (min-width: 1000px) {
+    .row {
+        height: 300px;
+    }
+
+}
